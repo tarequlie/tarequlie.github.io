@@ -133,7 +133,7 @@ footer{max-width:880px;margin:0 auto;border-top:1px solid var(--rule);padding-bl
     <div>
       <h1>Tarequl Islam</h1>
       <p class="role">Prospective PhD Student<br>Current: M.S. Student, Logistics Systems Engineering<br>Bowling Green State University</p>
-      <p>Hi! I am an M.S. student in Logistics Systems Engineering at Bowling Green State University. After three years as a capacity planner in industry, I returned to research to model the uncertainty I used to manage by hand. I combine optimization and machine learning to help complex systems make better decisions under uncertainty.</p>
+      <p>Hi! I am an M.S. student in Logistics Systems Engineering at Bowling Green State University. My research focuses on optimization and machine learning for complex systems.</p>
       <div class="links">
         <span>Email: <a href="mailto:tislam@bgsu.edu">tislam@bgsu.edu</a> or <a href="mailto:tareq.ipe.sust@gmail.com">tareq.ipe.sust@gmail.com</a></span>
         <a href="https://scholar.google.com/citations?user=24g4WIIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
@@ -148,7 +148,7 @@ footer{max-width:880px;margin:0 auto;border-top:1px solid var(--rule);padding-bl
     <div>
       <h2>Research Interests</h2>
       <ul class="plain">
-        <li>Optimization</li>
+        <li>Optimization under uncertainty</li>
         <li>Machine learning</li>
         <li>Process monitoring</li>
       </ul>
@@ -186,25 +186,15 @@ footer{max-width:880px;margin:0 auto;border-top:1px solid var(--rule);padding-bl
 <!-- ================= RESEARCH ================= -->
 <section class="page" id="research" hidden>
   <h1>Research</h1>
+  <p>I work on two connected problems: making better operational decisions with optimization, and understanding manufacturing processes with machine learning. Both come from the same question I faced as a capacity planner: how do the variables in a system interact, and how can we use that to decide better?</p>
 
-  <h2>Projects</h2>
+  <h2>Optimization for Supply Chain and Logistics</h2>
+  <p class="muted">Mathematical models for sourcing, transportation, and capacity decisions under competing objectives and uncertainty.</p>
   <div class="proj">
     <h3>Multi-objective transportation mode selection</h3>
     <p>A mixed-integer linear programming model that trades off cost and lead time when choosing between sea, air, and multimodal freight. The resulting plan improved lead time by 70% compared with sea freight and cut cost by 60% compared with air freight.</p>
     <p class="small muted">Published in the Asian Journal of Shipping and Logistics (2026).</p>
     <div class="chips"><span>MILP</span><span>Multi-objective optimization</span><span>Logistics</span></div>
-  </div>
-  <div class="proj">
-    <h3>Graph neural networks and evolutionary search for additive manufacturing</h3>
-    <p>A domain-informed graph neural network predicts mechanical properties of additively manufactured parts from process parameters, and NSGA-II searches the process space for settings that improve several properties at once.</p>
-    <p class="small muted">Published in Expert Systems with Applications (2026).</p>
-    <div class="chips"><span>GNN</span><span>NSGA-II</span><span>Additive manufacturing</span></div>
-  </div>
-  <div class="proj">
-    <h3>Physics-informed surface roughness prediction</h3>
-    <p>A physics-informed neural network with transfer learning predicts surface roughness of hardened steel machined on a CNC lathe, combining machining physics with limited experimental data.</p>
-    <p class="small muted">IEEE ICSET 2025.</p>
-    <div class="chips"><span>PINN</span><span>Transfer learning</span><span>Machining</span></div>
   </div>
   <div class="proj">
     <h3>Supplier selection under disruption risk</h3>
@@ -213,14 +203,44 @@ footer{max-width:880px;margin:0 auto;border-top:1px solid var(--rule);padding-bl
     <div class="chips"><span>MILP</span><span>Supply chain risk</span></div>
   </div>
   <div class="proj">
-    <h3>Generative AI in academic teaching and research</h3>
-    <p>A study of how generative AI tools are being used in university teaching and research.</p>
-    <p class="small muted">IEOM World Congress 2025 · Best Track Paper Award.</p>
-    <div class="chips"><span>Generative AI</span><span>Education</span></div>
+    <h3>Logistics systems studies</h3>
+    <p>Co-authored IISE Annual Conference papers (2025 Atlanta, 2026 Arlington) on last-mile delivery for e-commerce, third-party versus in-house logistics performance, the economic impact of regional transportation infrastructure in Northwest Ohio, and bio-based packaging for urban logistics.</p>
+    <p class="small muted">IISE Annual Conference Proceedings, 2025 and 2026.</p>
+    <div class="chips"><span>Last-mile delivery</span><span>3PL</span><span>Transportation</span></div>
+  </div>
+  <div class="proj">
+    <h3>Industry grounding</h3>
+    <p>Nearly five years of capacity, supply, and production planning, including a 12-month capacity plan for a $120M+ operation at Avery Dennison and a 15-plant, 67-line production network at O-I. These are the decision problems my optimization work is built to address.</p>
+    <div class="chips"><span>Capacity planning</span><span>S&amp;OP</span><span>Production networks</span></div>
   </div>
 
-  <h2>Collaborative Work</h2>
-  <p>Co-authored papers at the IISE Annual Conference (2025 Atlanta, 2026 Arlington) on bio-based packaging for urban logistics, last-mile delivery optimization, the economic impact of regional transportation infrastructure in Northwest Ohio, and third-party versus in-house logistics performance.</p>
+  <h2>Machine Learning for Manufacturing</h2>
+  <p class="muted">Data-efficient models that predict, optimize, and monitor manufacturing processes from limited experimental data.</p>
+  <div class="proj">
+    <h3>Graph neural networks and evolutionary search for additive manufacturing</h3>
+    <p>A domain-informed graph neural network predicts mechanical properties of additively manufactured parts from process parameters, reaching an average R² of 0.94 from only 60 experimental samples. NSGA-II then searches the process space for Pareto-optimal settings. This project brings both of my areas together: machine learning to model the process, and multi-objective optimization to improve it.</p>
+    <p class="small muted">Published in Expert Systems with Applications (2026).</p>
+    <div class="chips"><span>GNN</span><span>NSGA-II</span><span>Additive manufacturing</span></div>
+  </div>
+  <div class="proj">
+    <h3>Physics-informed surface roughness prediction</h3>
+    <p>An ensemble of physics-informed neural networks predicts surface roughness of hardened steel machined on a CNC lathe, building cutting speed, feed rate, and depth of cut into the model. Transfer learning from dry to flood-cooling conditions with only 27 samples raised R² from -1.59 to 0.81, outperforming XGBoost and Random Forest.</p>
+    <p class="small muted">IEEE ICSET 2025.</p>
+    <div class="chips"><span>PINN</span><span>Transfer learning</span><span>Machining</span></div>
+  </div>
+  <div class="proj">
+    <h3>Next: in-situ process monitoring</h3>
+    <p>I want to extend this work from predicting part quality after production to using sensor data collected during manufacturing, so that developing problems can be detected in real time and corrected earlier.</p>
+    <div class="chips"><span>Process monitoring</span><span>Anomaly detection</span><span>Sensor data</span></div>
+  </div>
+
+  <h2>Other Work</h2>
+  <ul class="plain">
+    <li>Generative AI in academic teaching and research: IEOM World Congress 2025, <strong>Best Track Paper Award</strong></li>
+    <li>LSTM-based forecasting for stock price and market analysis: 3rd IEOM World Congress, 2026</li>
+    <li>Respiratory health burden among construction workers: 3rd IEOM World Congress, 2026</li>
+    <li>Campus solar PV feasibility: 3rd IEOM World Congress, 2026</li>
+  </ul>
 
   <h2>Professional Service</h2>
   <ul class="plain">
