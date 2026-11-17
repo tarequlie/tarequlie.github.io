@@ -186,7 +186,34 @@ footer{max-width:880px;margin:0 auto;border-top:1px solid var(--rule);padding-bl
 <!-- ================= RESEARCH ================= -->
 <section class="page" id="research" hidden>
   <h1>Research</h1>
-  <p>I work on two connected problems: making better operational decisions with optimization, and understanding manufacturing processes with machine learning. Both come from the same question I faced as a capacity planner: how do the variables in a system interact, and how can we use that to decide better?</p>
+  <p>I am a graduate research assistant in the <a href="https://sites.google.com/view/imrantusarphd/aims-lab/about" target="_blank" rel="noopener">Advanced Industrial &amp; Manufacturing Systems (AIMS) Lab</a> at Bowling Green State University, directed by Dr. Imran Hasan Tusar.</p>
+  <p>I work on two connected problems: understanding manufacturing processes with machine learning, and making better operational decisions with optimization. Both come from the same question I faced as a capacity planner: how do the variables in a system interact, and how can we use that to decide better?</p>
+
+  <h2>Machine Learning for Manufacturing</h2>
+  <p class="muted">Data-efficient models that predict, optimize, and monitor manufacturing processes from limited experimental data.</p>
+  <div class="proj">
+    <h3>Early component-failure prediction for manufacturing equipment</h3>
+    <p>Building explainable, cost-sensitive machine learning models (LightGBM and a Temporal Convolutional Network) that predict component failures in manufacturing equipment 24 hours in advance, with probability calibration and SHAP-based explanations.</p>
+    <p class="small muted">Ongoing · Funded by a Honda AI+X Seed Grant (PI: Dr. Imran Hasan Tusar).</p>
+    <div class="chips"><span>LightGBM</span><span>TCN</span><span>SHAP</span><span>Predictive maintenance</span></div>
+  </div>
+  <div class="proj">
+    <h3>Graph neural networks and evolutionary search for additive manufacturing</h3>
+    <p>A domain-informed graph neural network predicts mechanical properties of additively manufactured parts from process parameters, reaching an average R² of 0.94 from only 60 experimental samples. NSGA-II then searches the process space for Pareto-optimal settings. This project brings both of my areas together: machine learning to model the process, and multi-objective optimization to improve it.</p>
+    <p class="small muted">Published in Expert Systems with Applications (2026).</p>
+    <div class="chips"><span>GNN</span><span>NSGA-II</span><span>Additive manufacturing</span></div>
+  </div>
+  <div class="proj">
+    <h3>Physics-informed surface roughness prediction</h3>
+    <p>An ensemble of physics-informed neural networks predicts surface roughness of hardened steel machined on a CNC lathe, building cutting speed, feed rate, and depth of cut into the model. Transfer learning from dry to flood-cooling conditions with only 27 samples raised R² from -1.59 to 0.81, outperforming XGBoost and Random Forest.</p>
+    <p class="small muted">IEEE ICSET 2025.</p>
+    <div class="chips"><span>PINN</span><span>Transfer learning</span><span>Machining</span></div>
+  </div>
+  <div class="proj">
+    <h3>Next: in-situ process monitoring</h3>
+    <p>I want to extend this work from predicting part quality after production to using sensor data collected during manufacturing, so that developing problems can be detected in real time and corrected earlier.</p>
+    <div class="chips"><span>Process monitoring</span><span>Anomaly detection</span><span>Sensor data</span></div>
+  </div>
 
   <h2>Optimization for Supply Chain and Logistics</h2>
   <p class="muted">Mathematical models for sourcing, transportation, and capacity decisions under competing objectives and uncertainty.</p>
@@ -212,26 +239,6 @@ footer{max-width:880px;margin:0 auto;border-top:1px solid var(--rule);padding-bl
     <h3>Industry grounding</h3>
     <p>Nearly five years of capacity, supply, and production planning, including a 12-month capacity plan for a $120M+ operation at Avery Dennison and a 15-plant, 67-line production network at O-I. These are the decision problems my optimization work is built to address.</p>
     <div class="chips"><span>Capacity planning</span><span>S&amp;OP</span><span>Production networks</span></div>
-  </div>
-
-  <h2>Machine Learning for Manufacturing</h2>
-  <p class="muted">Data-efficient models that predict, optimize, and monitor manufacturing processes from limited experimental data.</p>
-  <div class="proj">
-    <h3>Graph neural networks and evolutionary search for additive manufacturing</h3>
-    <p>A domain-informed graph neural network predicts mechanical properties of additively manufactured parts from process parameters, reaching an average R² of 0.94 from only 60 experimental samples. NSGA-II then searches the process space for Pareto-optimal settings. This project brings both of my areas together: machine learning to model the process, and multi-objective optimization to improve it.</p>
-    <p class="small muted">Published in Expert Systems with Applications (2026).</p>
-    <div class="chips"><span>GNN</span><span>NSGA-II</span><span>Additive manufacturing</span></div>
-  </div>
-  <div class="proj">
-    <h3>Physics-informed surface roughness prediction</h3>
-    <p>An ensemble of physics-informed neural networks predicts surface roughness of hardened steel machined on a CNC lathe, building cutting speed, feed rate, and depth of cut into the model. Transfer learning from dry to flood-cooling conditions with only 27 samples raised R² from -1.59 to 0.81, outperforming XGBoost and Random Forest.</p>
-    <p class="small muted">IEEE ICSET 2025.</p>
-    <div class="chips"><span>PINN</span><span>Transfer learning</span><span>Machining</span></div>
-  </div>
-  <div class="proj">
-    <h3>Next: in-situ process monitoring</h3>
-    <p>I want to extend this work from predicting part quality after production to using sensor data collected during manufacturing, so that developing problems can be detected in real time and corrected earlier.</p>
-    <div class="chips"><span>Process monitoring</span><span>Anomaly detection</span><span>Sensor data</span></div>
   </div>
 
   <h2>Other Work</h2>
